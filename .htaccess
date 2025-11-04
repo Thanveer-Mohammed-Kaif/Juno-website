@@ -1,0 +1,61 @@
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine on
+RewriteOptions inherit
+#----------------JunoNatural.com------------------------#
+<IfModule mod_headers.c>
+    # ---------------------------------------
+    # Content Security Policy (CSP) 
+    # IMPORTANT: Must be on ONE line, no line breaks!
+    # ---------------------------------------
+    Header set Content-Security-Policy "default-src 'self'; img-src 'self' data: https: https://maps.gstatic.com https://maps.googleapis.com https://lh3.googleusercontent.com https://geo0.ggpht.com https://khms.google.com https://khms0.google.com https://khms1.google.com https://khms2.google.com https://khms3.google.com https://*.google.com https://img1.wsimg.com; font-src 'self' https://fonts.gstatic.com https://unpkg.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://code.jquery.com https://maps.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://code.jquery.com https://ajax.googleapis.com https://img1.wsimg.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com https://code.jquery.com https://ajax.googleapis.com https://fonts.gstatic.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.google-analytics.com https://csp.secureserver.net; frame-src 'self' https://www.google.com https://maps.google.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+    # ---------------------------------------
+    # X-Content-Type-Options
+    # ---------------------------------------
+    Header set X-Content-Type-Options "nosniff"
+    
+    # ---------------------------------------
+    # X-Frame-Options
+    # ---------------------------------------
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # ---------------------------------------
+    # Referrer-Policy
+    # ---------------------------------------
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # ---------------------------------------
+    # Permissions-Policy
+    # ---------------------------------------
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), fullscreen=(self)"
+    
+    # ---------------------------------------
+    # X-XSS-Protection
+    # ---------------------------------------
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # ---------------------------------------
+    # Strict-Transport-Security (HSTS)
+    # WARNING: Only enable if you have working HTTPS!
+    # ---------------------------------------
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # ---------------------------------------
+    # Cross-Origin Policies
+    # ---------------------------------------
+    Header always unset Cross-Origin-Embedder-Policy
+    Header always unset Cross-Origin-Resource-Policy
+
+</IfModule>
+
+# ---------------------------------------
+# Disable directory listing
+# ---------------------------------------
+Options -Indexes
+
+# ---------------------------------------
+# Prevent access to sensitive files
+# ---------------------------------------
+<FilesMatch "(^\.|wp-config\.php|composer\.(json|lock)|package\.json|\.env|config\.js|config\.php)">
+    Require all denied
+</FilesMatch>

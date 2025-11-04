@@ -1,0 +1,520 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.556), rgba(0, 0, 0, 0.556)),
+    url("../images/background.webp");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 15%;
+}
+.mobile_container {
+  display: none;
+  margin-bottom: 15vh;
+}
+.product-list a {
+  text-decoration: none;
+}
+.card {
+  background-color: rgba(250, 250, 250, 1);
+  padding: 30px;
+  border-radius: 24px;
+  font-family: "Nunito", sans-serif;
+}
+.card h4 {
+  font-weight: 700;
+  color: rgba(58, 58, 58, 1);
+}
+.card p {
+  color: rgba(90, 90, 90, 1);
+  font-size: 1.042vw;
+}
+.image {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 4px 0px rgba(8, 8, 8, 0.05);
+  border: 20px;
+  padding: 30px;
+}
+.card-btn button {
+  background-color: rgba(65, 105, 225, 1);
+  border: 2px solid rgba(65, 105, 225, 1);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.042vw;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  row-gap: 50px;
+}
+.card-text h4 {
+  text-transform: capitalize;
+  font-size: 1.642vw;
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: rgba(27, 64, 96, 1);
+  color: white;
+}
+.hero-detail h1 {
+  font-size: 2vw;
+  font-family: "Outfit", sans-serif;
+}
+.hero-detail h2 {
+  font-size: 2vw;
+  font-family: "Nunito", sans-serif;
+}
+.badge {
+  width: 30%;
+  background-color: #50c87826;
+  color: #50c878;
+  border: 2px solid #50c878;
+}
+.smalldesc {
+  font-size: 1.142vw;
+}
+.reviews p {
+  font-size: 1.042vw;
+}
+.money-con h3 {
+  font-size: 1.802vw;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+}
+.product-details h2 {
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-products {
+  font-family: "Nunito", sans-serif;
+}
+.about-products-btns button {
+  font-family: "Nunito", sans-serif;
+  padding: 10px 0;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.btns {
+  border: none;
+  background-color: transparent;
+  padding: 10px 0;
+  font-size: 1.602vw;
+  font-family: "Nunito", sans-serif;
+}
+
+.tabactive {
+  border-bottom: 2px solid green;
+}
+.tab-content {
+  font-family: "Nunito", sans-serif;
+}
+
+.description {
+  font-size: 1.242vw;
+}
+.description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ingredients ul li {
+  list-style-type: none;
+  font-size: 1.242vw;
+  padding: 10px;
+}
+.ingredients ul li:nth-child(odd) {
+  background-color: rgba(4, 105, 58, 1);
+  color: white;
+}
+.ingredients ul li:nth-child(even) {
+  background-color: rgba(238, 238, 238, 1);
+}
+.features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.features ul li {
+  list-style-type: none;
+  font-size: 1.242vw;
+}
+.features {
+  font-size: 1.242vw;
+}
+.inclusive {
+  font-size: 1.042vw;
+}
+.Weight {
+  font-size: 1.302vw;
+}
+.buy-btn {
+  width: 20%;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  font-size: 1.042vw;
+}
+.material {
+  font-size: 1.342vw;
+}
+.materials {
+  font-size: 1.1vw;
+}
+.Hsn {
+  font-size: 1.1vw;
+}
+
+.related-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.related-section h2 {
+  font-weight: 600;
+}
+
+.carousel-item {
+  padding: 20px 0;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.product-desc {
+  color: #6c757d;
+  font-size: 14px;
+  margin-top: 5px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.rating {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.view-btn {
+  margin-top: 10px;
+  background: #2b53ea;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.view-btn:hover {
+  background: #1a3bbf;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #1a3bbf;
+  font-size: 30px;
+}
+
+.slick-dots li button:before {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1a3bbf;
+  font-size: 12px;
+}
+
+.slick-prev {
+  left: -40px;
+  z-index: 1;
+}
+.slick-next {
+  right: -40px;
+  z-index: 1;
+}
+
+.product-slide {
+  padding: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    row-gap: 50px;
+  }
+  .mobile_container {
+  display: block !important;
+  margin-bottom: 15vh;
+}
+  .btns {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 2.302vw;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .hero-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(27, 64, 96, 1);
+    color: white;
+  }
+  .hero-detail h1 {
+    font-size: 3vw;
+    font-family: "Outfit", sans-serif;
+  }
+  .hero-detail h2 {
+    font-size: 3vw;
+    font-family: "Nunito", sans-serif;
+  }
+  .product-details h2 {
+    font-weight: 700;
+    font-size: 2.7vw;
+  }
+  .tabactive {
+  border-bottom: 2px solid green;
+}
+  .badge {
+    width: 35%;
+    background-color: #50c87826;
+    color: #50c878;
+    border: 2px solid #50c878;
+  }
+  .smalldesc {
+    font-size: 1.742vw;
+  }
+  .reviews p {
+    font-size: 1.742vw;
+  }
+  .money-con h3 {
+    font-size: 2.802vw;
+  }
+  .inclusive {
+    font-size: 2.042vw;
+  }
+  .Weight {
+    font-size: 2.302vw;
+  }
+  .buy-btn {
+    width: 50%;
+    font-size: 1.642vw;
+  }
+  .material {
+    font-size: 2.342vw;
+  }
+  .materials {
+    font-size: 2.1vw;
+  }
+  .Hsn {
+    font-size: 2.1vw;
+  }
+  .description {
+    font-size: 2.242vw;
+  }
+  .ingredients ul li {
+    list-style-type: none;
+    font-size: 2.242vw;
+    padding: 10px;
+  }
+  .features ul li {
+    list-style-type: none;
+    font-size: 2.242vw;
+  }
+  .features {
+    font-size: 2.242vw;
+  }
+  .card-text h4 {
+    text-transform: capitalize;
+    font-size: 2.642vw;
+  }
+  .card p {
+    color: rgba(90, 90, 90, 1);
+    font-size: 2.042vw;
+  }
+  .card-btn button {
+    background-color: rgba(65, 105, 225, 1);
+    border: 2px solid rgba(65, 105, 225, 1);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 2.042vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    row-gap: 50px;
+  }
+  .btns {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 4.302vw;
+    font-family: "Nunito", sans-serif;
+  }
+  .active {
+    border-bottom: 2px solid green;
+  }
+  .hero-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(27, 64, 96, 1);
+    color: white;
+  }
+  .hero-detail h1 {
+    font-size: 6vw;
+    font-family: "Outfit", sans-serif;
+  }
+  .hero-detail h2 {
+    font-size: 6vw;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .product-details h2 {
+    font-weight: 700;
+    font-size: 5.7vw;
+  }
+  .tabactive {
+  border-bottom: 2px solid green;
+}
+  .badge {
+    width: 40%;
+    background-color: #50c87826;
+    color: #50c878;
+    border: 2px solid #50c878;
+  }
+  .smalldesc {
+    font-size: 3.742vw;
+  }
+  .reviews p {
+    font-size: 3.742vw;
+  }
+  .money-con h3 {
+    font-size: 6.802vw;
+  }
+  .inclusive {
+    font-size: 4.042vw;
+  }
+  .Weight {
+    font-size: 5.302vw;
+  }
+  .buy-btn {
+    width: 50%;
+    font-size: 4.642vw;
+  }
+  .material {
+    font-size: 5.342vw;
+  }
+  .materials,
+  .Hsn {
+    font-size: 4vw;
+  }
+  .description {
+    font-size: 4.242vw;
+  }
+  .ingredients ul li {
+    list-style-type: none;
+    font-size: 4.242vw;
+    padding: 10px;
+  }
+  .features ul li {
+    list-style-type: none;
+    font-size: 4.242vw;
+  }
+
+  .features {
+    font-size: 4.242vw;
+  }
+  .card-text h4 {
+    text-transform: capitalize;
+    font-size: 5.642vw;
+  }
+  .card p {
+    color: rgba(90, 90, 90, 1);
+    font-size: 4.042vw;
+  }
+  .card-btn button {
+    background-color: rgba(65, 105, 225, 1);
+    border: 2px solid rgba(65, 105, 225, 1);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 4.042vw;
+  }
+}

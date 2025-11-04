@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Juno Naturals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
+    <!-- ************************************************ NAVBAR ************************************************ -->
+    <nav class="nav sticky-top">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo_img" src="./img/nav_logo.webp" alt="logo" />
+        </a>
+      </div>
+      <div class="navLinks">
+        <ul class="links">
+          <li class="navLink"><a href="./index.html">Home</a></li>
+          <li class="navLink"><a href="./about.html">About us</a></li>
+          <li class="navLink"><a href="./ourService.html">Our Services</a></li>
+          <li class="navLink"><a href="./product.html">Product</a></li>
+          <li class="navLink">
+            <a href="./couseOffering.html">Courses Offered</a>
+          </li>
+          <li class="navLink active">
+            <a href="./contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mobile_container">
+      <div class="header_mobile">
+        <div class="container-fluid col-10">
+          <div
+            class="d-flex justify-content-between align-items-center mobile_pallete"
+          >
+            <div>
+              <a href="./index.html">
+                <img
+                  src="./img/nav_logo.webp"
+                  class="img-fluid logo ml-5"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="icon-container mr-5">
+              <ion-icon
+                class="bi bi-list hamburger"
+                name="menu-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <ul class="menu">
+            <li class="menu-item"><a href="./index.html">Home</a></li>
+            <li class="menu-item"><a href="./about.html">About us</a></li>
+            <li class="menu-item">
+              <a href="./ourService.html">Our Services</a>
+            </li>
+            <li class="menu-item">
+              <a href="./product.html">Product</a>
+            </li>
+            <li class="menu-item">
+              <a href="./couseOffering.html">Course Offering</a>
+            </li>
+            <li class="menu-item"><a href="./contact.html">Contact us</a></li>
+            <li class="menu-item">
+              <div class="icon-container1 mt-4">
+                <ion-icon
+                  class="bi bi-x-circle closed"
+                  name="close-circle-outline"
+                ></ion-icon>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="mainsection mt-5 pt-lg-0 pt-5">
+      <section class="container-fluid contacthero col-11 mx-auto">
+        <div class="row">
+          <div
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <h2 class="junohead fw-medium nunitosans">Juno Natural Healing</h2>
+            <div class="custombtm p-2 mb-2"></div>
+            <p class="col-6 mx-auto text-center nunitosans">
+              Discover personalized holistic guidance that restores balance to
+              your mind, body, and spirit. Our services are exclusively
+              available for USA clients.
+            </p>
+            <div
+              class="d-flex justify-content-between align-items-center bg-white btn-container"
+            >
+              <button
+                class="btn rounded coursebtn btnactive inter"
+                data-id="consultation"
+              >
+                💆‍♀️ Consultation Booking</button
+              ><button
+                class="btn rounded coursebtn inter"
+                data-id="courseenrollment"
+              >
+                🌈 Course Enrollment
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid mt-5">
+        <div class="row">
+          <div class="maincontent">
+            <div class="bg-white py-5 col-11 mx-auto rounded-4">
+              <div class="col-11 mx-auto">
+                <div class="form-section bg-white rounded-4">
+                  <form class="needs-validation">
+                    <div class="content" id="courseenrollment">
+                      <h3>🌈 Course Enrollment</h3>
+                      <div class="tipnote">
+                        <p class="lh-lg py-4 px-4 col-9">
+                          Join our expert-led workshops and certified courses to
+                          enhance your emotional wellbeing, energy healing,
+                          mindfulness, and holistic wellness. Learn from
+                          internationally certified instructors and take your
+                          personal growth and spiritual journey to the next
+                          level.
+                        </p>
+                      </div>
+                      <h5 class="section-title">Personal Information</h5>
+                      <div class="row mb-4">
+                        <div class="col-md-6">
+                          <label class="form-label required" id="name"
+                            >Full Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            required
+                          />
+                          <div class="valid-feedback">Valid Name!</div>
+                          <div class="invalid-feedback">
+                            Please enter a Name.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required"
+                            >Age / Date of Birth</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control"
+                            required
+                            id="age"
+                          />
+                          <div class="valid-feedback">Valid age!</div>
+                          <div class="invalid-feedback">
+                            Please enter a Valid Age.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Gender</label>
+                          <select class="form-select" required id="gender">
+                            <option value="">Select an option</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                          <div class="valid-feedback">Valid gender!</div>
+                          <div class="invalid-feedback">
+                            Please enter a valid gender.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            required
+                            id="email"
+                          />
+                          <div class="valid-feedback">Valid Mail!</div>
+                          <div class="invalid-feedback">
+                            Please enter a valid mail.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required"
+                            >Phone / WhatsApp</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            required
+                            id="wnumber"
+                          />
+                          <div class="valid-feedback">Valid number!</div>
+                          <div class="invalid-feedback">
+                            Please enter a valid number.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Address</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            required
+                            id="address"
+                          />
+                          <div class="valid-feedback">Valid address!</div>
+                          <div class="invalid-feedback">
+                            Please enter a valid address.
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-start gap-3 courseenrollment flex-lg-row flex-column"
+                      >
+                        <div class="purplediv lh-lg">
+                          <div class="col-11 mx-auto mt-4 py-3">
+                            <h4 class="puplehead">
+                              💆‍♀️ Short Workshops (1.5–2 hours)
+                            </h4>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Birth Karma & Energy Healing
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Mindfulness & Breathwork for Anxiety, Focus &
+                                Sleep
+                              </p>
+                              <h6>$ 99</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Chakra Healing for Emotional Balance & Energy
+                                Flow
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Inner Child Healing & Self-Love Practices
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Crystal Healing for Empaths & Sensitive
+                                Individuals
+                              </p>
+                              <h6>$ 99</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Energy Protection for Healers, Coaches & Empaths
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Astrology for Emotional Intelligence &
+                                Relationship Insights
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Past Life Regression & Karma Clearing
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Soul Contracts & Relationship Healing
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Astrology for Career & Relationship Guidance
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Numerology for Life Path, Karmic Debt & Soul
+                                Contracts
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Sacred Space Cleansing & Energy Protection
+                                Rituals
+                              </p>
+                              <h6>$ 99</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center mt-4"
+                            >
+                              <p
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input mt-2"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Herbal Detoxification & Naturopathy Practices
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 mx-auto greendiv">
+                          <div class="col-11 mx-auto mt-4 py-3">
+                            <h4 class="greenhead">
+                              💆‍♀️IPHM Certified Courses (2–3 days)
+                            </h4>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-4"
+                            >
+                              <p class="nunitosans mt-2">
+                                <input
+                                  class="form-check-input mt-1 mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Reiki Level 1
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-4"
+                            >
+                              <p class="nunitosans mt-2">
+                                <input
+                                  class="form-check-input mt-1 mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />Reiki Level 2
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-4"
+                            >
+                              <p class="nunitosans mt-2">
+                                <input
+                                  class="form-check-input mt-1 mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />Reiki Level 3a (Master Practitioner)
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-4"
+                            >
+                              <p class="nunitosans mt-2">
+                                <input
+                                  class="form-check-input mt-1 mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />Reiki Level 3b (Master Teacher)
+                              </p>
+                              <h6>$ 288</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-4"
+                            >
+                              <p class="nunitosans mt-2">
+                                <input
+                                  class="form-check-input mt-1 mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />Diploma in Bach Flower Therapy
+                              </p>
+                              <h6>$ 188</h6>
+                            </div>
+                            <div class="yellowdiv">
+                              <p class="col-8 mx-auto text-center px-3 py-4">
+                                All certified courses include IPHM certification
+                                upon completion
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 py-4">
+                        <div class="col-md-12">
+                          <label class="form-label required"
+                            >Brief Description / Goal</label
+                          >
+                          <textarea
+                            class="form-select"
+                            placeholder="Please describe your goals for taking this course and any specific areas you'd like to focus on..."
+                            required
+                          >
+                          </textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content active" id="consultation">
+                      <h3>💆‍♀️ Personalized Holistic Consultation</h3>
+                      <div class="tipnote">
+                        <p class="lh-lg py-4 px-4 col-9">
+                          Join our expert-led workshops and certified courses to
+                          enhance your emotional wellbeing, energy healing,
+                          mindfulness, and holistic wellness. Learn from
+                          internationally certified instructors and take your
+                          personal growth and spiritual journey to the next
+                          level.
+                        </p>
+                      </div>
+                      <h5 class="section-title">Personal Information</h5>
+                      <div class="row mb-4">
+                        <div class="col-md-6">
+                          <label class="form-label required">Full Name</label>
+                          <input
+                            type="text"
+                            class="form-control rounded"
+                            required
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required"
+                            >Age / Date of Birth</label
+                          >
+                          <input type="date" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Gender</label>
+                          <select class="form-select" required>
+                            <option value="">Select an option</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Email</label>
+                          <input type="email" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required"
+                            >Phone / WhatsApp</label
+                          >
+                          <input type="text" class="form-control" required />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label required">Address</label>
+                          <input type="text" class="form-control" required />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="col-12 mx-auto">
+                          <label class="form-label required"
+                            >Preferred Timezone</label
+                          >
+                          <select class="form-select" required>
+                            <option value="">Select an option</option>
+                            <option>EST</option>
+                            <option>CST</option>
+                            <option>PST</option>
+                            <option>MST</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="col-12 mx-auto mt-3">
+                          <label class="form-label required"
+                            >Consultation Mode</label
+                          >
+                          <select class="form-select" required>
+                            <option value="">Select an option</option>
+                            <option>Zoom</option>
+                            <option>WhatsApp</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <h4>Consultation Mode</h4>
+                        <p>
+                          Please select the service(s) you're interested in:
+                        </p>
+                        <div class="col-11 mx-auto">
+                          <p>✨ Emotional & Mental Health Consultations</p>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Stress & Emotional Balance Session
+                              </h6>
+                              <p class="px-4">
+                                Identify emotional stressors and restore balance
+                                using holistic and energy-based methods.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Mindfulness & Meditation for Anxiety, Sleep &
+                                Focus
+                              </h6>
+                              <p class="px-4">
+                                Guided practices to reduce anxiety, improve
+                                focus, and promote restful sleep.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Holistic Wellness & Lifestyle Reset
+                              </h6>
+                              <p class="px-4">
+                                Practical strategies to restore overall mental,
+                                emotional, and physical well-being.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Work-Life Balance & Burnout Reset
+                              </h6>
+                              <p class="px-4">
+                                Prevent burnout and find equilibrium between
+                                personal and professional life.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Emotional Trauma & Inner Child Healing
+                              </h6>
+                              <p class="px-4">
+                                Heal past emotional wounds, release trauma, and
+                                strengthen self-love practices.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">
+                              $ 88 <span>( 60-90 Min )</span>
+                            </h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Energy Protection & Healing for Sensitive
+                                Individuals
+                              </h6>
+                              <p class="px-4">
+                                Shield yourself from negative energies while
+                                restoring emotional vitality.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Chakra Alignment & Emotional Flow
+                              </h6>
+                              <p class="px-4">
+                                Align energy centers to support emotional
+                                clarity, vitality, and stability.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Life Path, Soul Purpose & Career Guidance
+                              </h6>
+                              <p class="px-4">
+                                Explore emotional patterns, karmic influences,
+                                and life direction for clarity and purpose.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Relationship Guidance & Emotional Intelligence
+                              </h6>
+                              <p class="px-4">
+                                Improve empathy, communication, and connection
+                                in personal and professional relationships.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Bach Flower Remedy Consultation
+                              </h6>
+                              <p class="px-4">
+                                Personalized remedies to address stress,
+                                anxiety, fear, and emotional imbalance.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">
+                              $ 88 <span>( 60-90 Min )</span>
+                            </h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Holistic Emotional Reset (All-Inclusive)
+                              </h6>
+                              <p class="px-4">
+                                Comprehensive session addressing emotional,
+                                mental, spiritual, and physical well-being.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">
+                              $ 99 <span>( 60-90 Min )</span>
+                            </h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Other – Personal Guidance (All-Inclusive)
+                              </h6>
+                              <p class="px-4">
+                                Tailored session covering emotional, mental,
+                                physical, spiritual, relationship, career,
+                                financial, and life challenges.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">
+                              $ 99 <span>( 60-90 Min )</span>
+                            </h6>
+                          </div>
+                          <h6 class="py-4">Diet & Nutrition Consultations</h6>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Personalized Nutrition & Diet Planning
+                              </h6>
+                              <p class="px-4">
+                                Tailored dietary guidance for energy, immunity,
+                                and overall health.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Detox & Digestive Support Consultation
+                              </h6>
+                              <p class="px-4">
+                                Advice on natural detox, digestive health, and
+                                cleansing routines.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Lifestyle & Wellness Diet Reset
+                              </h6>
+                              <p class="px-4">
+                                Combine nutrition, habits, and lifestyle
+                                practices to reset balance.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 48 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Weight Management & Metabolism Support
+                              </h6>
+                              <p class="px-4">
+                                Customized plans for healthy weight, metabolism,
+                                and fat-burning support.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Herbal & Naturopathy Diet Support
+                              </h6>
+                              <p class="px-4">
+                                Guidance integrating herbs and naturopathy
+                                practices to boost energy and overall health.
+                              </p>
+                            </div>
+                            <h6 class="mb-5">$ 88 <span>( 60 Min )</span></h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-4"
+                          >
+                            <div class="d-flex flex-column">
+                              <h6
+                                class="nunitosans"
+                                class="form-check-label"
+                                for="checkDefault"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="checkDefault"
+                                />
+                                Other
+                              </h6>
+                              <p class="px-4">
+                                Personal Guidance (all-inclusive: emotional,
+                                mental, physical, spiritual, love, family,
+                                career, finances, peace)
+                              </p>
+                            </div>
+                            <h6 class="mb-5">
+                              $ 99 <span>( 60-90 Min )</span>
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <h5>Additional Information</h5>
+                      <div class="row g-3 py-4">
+                        <div class="col-md-12">
+                          <label class="form-label required"
+                            >Brief Description of Your Concern / Goal</label
+                          >
+                          <textarea
+                            class="form-select"
+                            placeholder="Please describe what you'd like to address in your session..."
+                            required
+                          >
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="row g-3 py-4">
+                        <div class="col-md-12">
+                          <label class="form-label required"
+                            >Current Medications / Health Conditions / Allergies
+                            (Optional)</label
+                          >
+                          <textarea
+                            class="form-select"
+                            placeholder="Please describe what you'd like to address in your session..."
+                            required
+                          >
+                          </textarea>
+                        </div>
+                      </div>
+                      <div class="row g-3 py-4">
+                        <div class="col-md-12">
+                          <label class="form-label required"
+                            >Previous Holistic Practices Tried (Optional)</label
+                          >
+                          <textarea
+                            class="form-select"
+                            placeholder="Please describe what you'd like to address in your session..."
+                            required
+                          >
+                          </textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                      <div class="col-md-12">
+                        <h5 class="section-title mt-4">Course Selection</h5>
+                        <div class="innergreendiv py-3">
+                          <div
+                            class="d-flex px-4 py-2 justify-content-start gap-3 align-items-center"
+                          >
+                            <h6>Select Your Date & Time:</h6>
+                            <p class="mb-1">
+                              Please select your preferred course date from our
+                              available slots below.
+                            </p>
+                          </div>
+                          <div class="text-center bg-white col-11 mx-auto py-2">
+                            <p>Calendly integration would appear here</p>
+                            <p>Choose from available course dates</p>
+                            <div class="col-lg-3 col-6 mx-auto">
+                              <input
+                                type="datetime-local"
+                                id="CourseDates"
+                                name="birthdaytime"
+                                class="form-control"
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="py-4">
+                      <h6 class="cancelhead">Cancellation & Refund Policy</h6>
+                      <div class="greydiv">
+                        <h6>Consultations:</h6>
+                        <p>
+                          Cancel or reschedule at least 24 hours before your
+                          scheduled session for a full refund. Cancellations
+                          within 24 hours may incur a partial or no refund.
+                          No-shows are non-refundable.
+                        </p>
+                        <h6>Refund Processing:</h6>
+                        <p>
+                          All refunds are processed within 7–10 business days.
+                        </p>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkDefault"
+                        />
+                        <label class="form-check-label" for="checkDefault">
+                          I have read and agree to the Cancellation & Refund
+                          Policy
+                        </label>
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-primary px-3 py-1 fs-5"
+                      type="submit"
+                    >
+                      Enroll Now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ************************************************ FOOTER ************************************************ -->
+    <section class="Footer" id="footer">
+      <footer class="footer-content mb-0 pb-0">
+        <div class="container-fluid col-lg-10">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <img
+                src="./img/nav_logo.webp"
+                class="img-fluid center-block d-block mx-auto"
+              />
+            </div>
+            <div
+              class="col-lg-8 d-flex align-items-center justify-content-end flex-lg-row flex-md-row flex-column gap-5"
+            >
+              <div class="d-flex align-items-center gap-4">
+                <div>
+                  <i class="bi bi-telephone icons"></i>
+                </div>
+                <div>
+                  <h5>Call us</h5>
+                  <a href="tel:+919363025558" class="link_all">
+                    <span>USA - +91 9363025558</span>
+                  </a>
+                  <br />
+                  <a href="tel:+916379401155" class="link_all">
+                    <span>India - +91 6379401155</span>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-4">
+                <div>
+                  <i class="bi bi-envelope icons"></i>
+                </div>
+                <div>
+                  <h5>Email</h5>
+                  <a href="mailto:junonaturalglobal@gmail.com" class="link_all">
+                    <span>USA - junonaturalglobal@gmail.com</span>
+                  </a>
+                  <br />
+                  <a
+                    href="mailto:junonaturalhealing@gmail.com"
+                    class="link_all"
+                  >
+                    <span>India - junonaturalhealing@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-between align-items-start footer_end py-5"
+          >
+            <div class="col-lg-3 col-md-10 col-12 mx-auto">
+              <h3 class="sitemap_head">About us</h3>
+              <p class="footer_para">
+                At Juno Natural Healing Practice, we believe in the
+                transformative power of natural healing to restore balance
+                across all aspects of life—physical, mental, emotional, and
+                spiritual.
+              </p>
+              <a href="./about.html" class="footerlink"> Know More </a>
+            </div>
+            <div class="col-lg-2 col-6 mt-lg-0 mt-5">
+              <div class="bottomslg_footer">
+                <h3 class="sitemap_head">Quick Links</h3>
+                <p class="footer_link mb-0">
+                  <a href="./index.html" class="link_all"> Home </a>
+                </p>
+                <p class="footer_link mb-0">
+                  <a href="./about.html" class="link_all"> About us </a>
+                </p>
+                <p class="footer_link mb-0">
+                  <a href="./ourService.html" class="link_all">
+                    Our Services
+                  </a>
+                </p>
+                <p class="footer_link mb-0">
+                  <a href="./couseOffering.html" class="link_all">
+                    Course Offering
+                  </a>
+                </p>
+                <p class="footer_link mb-0">
+                  <a href="./contact.html" class="link_all"> Contact us </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-6 mt-lg-0 mt-5">
+              <div class="bottomslg_footer">
+                <h3 class="sitemap_head">Privacy policy</h3>
+                <p class="footer_link mb-0">
+                  <a href="./terms.html" class="link_all"> Privacy Policy </a>
+                </p>
+                <p class="footer_link mb-0">
+                  <a href="./terms.html" class="link_all">
+                    Terms of Services
+                  </a>
+                </p>
+              </div>
+              <div class="bottomslg_footer mt-5">
+                <h3 class="sitemap_head">Contact us</h3>
+                <p class="footer_link mb-0">
+                  <a href="#" class="link_all"> +91 63794 01155 </a>
+                </p>
+                <p class="footer_link mb-0">
+                  No:73, Green Home, Onappalayam Thondamuthur, Dhaliyur post
+                  Coimbatore - 641109.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 mt-lg-0 mt-5">
+              <div class="bottomslg_footer">
+                <h3 class="sitemap_head">Address</h3>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3916.2637797200387!2d76.860648!3d11.018825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAxJzA3LjgiTiA3NsKwNTEnMzguMyJF!5e0!3m2!1sen!2sin!4v1741253363049!5m2!1sen!2sin"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  class="mt-3 map"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row footer_end">
+            <p class="footerend_parra mb-0">
+              Copyright © 2025 Juno Natural Healing Practice
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="./js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
